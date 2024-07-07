@@ -1,0 +1,17 @@
+{
+  "name": "component-lib-test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@arco-design/web-react": "^2.61.2",
+    "@douyinfe/semi-ui": "^2.55.5",
+    "antd": "^5.16.1"
+  }
+}
