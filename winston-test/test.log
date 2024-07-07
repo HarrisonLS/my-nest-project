@@ -1,0 +1,9 @@
+info: test
+error: failed
+debug: 6666666666
+{"level":"info","message":"test","timestamp":"2024-03-25 22:51:32"}
+{"level":"error","message":"failed","timestamp":"2024-03-25 22:51:32"}
+{"level":"debug","message":6666666666,"timestamp":"2024-03-25 22:51:32"}
+{"level":"info","message":"test","timestamp":"2024-03-25 22:51:58"}
+{"level":"error","message":"failed","timestamp":"2024-03-25 22:51:58"}
+{"level":"debug","message":6666666666,"timestamp":"2024-03-25 22:51:58"}
