@@ -15,4 +15,5 @@ export class ExamController {
   sum(numArr: Array<number>): number {
     return numArr.reduce((total, item) => total + item, 0);
   }
+
 }
