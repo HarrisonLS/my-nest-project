@@ -4,21 +4,22 @@ import { RedisService } from './redis.service';
 
 @Global()
 @Module({
-  providers: [RedisService,
+  providers: [
+    RedisService,
     {
       provide: 'REDIS_CLIENT',
       async useFactory() {
         const client = createClient({
           socket: {
             host: 'localhost',
-            port: 6379
-          }
+            port: 6379,
+          },
         });
         await client.connect();
         return client;
-      }
-    }
+      },
+    },
   ],
-  exports: [RedisService]
+  exports: [RedisService],
 })
-export class RedisModule { }
+export class RedisModule {}

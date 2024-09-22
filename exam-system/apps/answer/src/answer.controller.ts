@@ -5,14 +5,14 @@ import { firstValueFrom } from 'rxjs';
 
 @Controller()
 export class AnswerController {
-  constructor(private readonly answerService: AnswerService) { }
+  constructor(private readonly answerService: AnswerService) {}
 
   @Inject('EXAM_SERVICE')
-  private examClient: ClientProxy
+  private examClient: ClientProxy;
 
   @Get()
   async getHello() {
     const value = await firstValueFrom(this.examClient.send('sum', [1, 3, 5]));
-    return this.answerService.getHello() + ' ' + value
+    return this.answerService.getHello() + ' ' + value;
   }
 }

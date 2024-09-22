@@ -11,6 +11,8 @@ async function bootstrap() {
       port: 8888,
     },
   });
+  // 开启服务
+  app.startAllMicroservices();
 
   await app.listen(3002);
 }

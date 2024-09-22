@@ -13,9 +13,9 @@ import { ClientsModule, Transport } from '@nestjs/microservices';
           port: 8888,
         },
       },
-    ])
+    ]),
   ],
   controllers: [AnswerController],
   providers: [AnswerService],
 })
-export class AnswerModule { }
+export class AnswerModule {}
